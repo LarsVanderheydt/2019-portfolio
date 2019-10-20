@@ -1,5 +1,4 @@
-# Git repo of my portfolio page
->
+# My porfolio
 
 ## Made with:
 - [CurtainsJS](https://www.curtainsjs.com/)
