@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lars Vanderheydt</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#4e4e4e">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="backgrounds" id="backgrounds">
+    <img src="./assets/swiss.jpg" data-sampler="displacedImage" width="100%" alt="">
+  </div>
+  <div id="canvas"></div>
+
+
+  <header class="container">
+  </header>
+
+
+
+  <main class="wrapper container">
+    <ul class="icon-list">
+      <li><a target="_blank" href="https://github.com/LarsVanderheydt"><span class="icon icon--github"></span></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/lars-vanderheydt/"><span class="icon icon--linkedin"></span></a></li>
+    </ul>
+
+    <h1 class="homepage--title">Lars Vanderheydt</h1>
+
+    <ul class="icon-list">
+      <li><a target="_blank" href="https://www.drupal.org/"><span class="icon icon--drupal"></span></a></li>
+      <li><a target="_blank" href="https://reactjs.org/"><span class="icon icon--react"></span></a></li>
+      <li><a target="_blank" href="https://vuejs.org/"><span class="icon icon--vue"></span></a></li>
+      <li><a target="_blank" href="https://webpack.js.org/"><span class="icon icon--webpack"></span></a></li>
+      <li><a target="_blank" href="https://gulpjs.com/"><span class="icon icon--gulp"></span></a></li>
+    </ul>
+
+
+  </main>
+
+
+
+  <footer class="container">
+  </footer>
+
+
+
+
+  <script src="./js/main.js"></script>
+  <!-- shaders and lib -->
+
+  <script id="mouse-displacement-vs" type="x-shader/x-vertex">
+    #ifdef GL_ES
+      precision mediump float;
+    #endif
+
+    // default mandatory variables
+    attribute vec3 aVertexPosition;
+    attribute vec2 aTextureCoord;
+
+    uniform mat4 uMVMatrix;
+    uniform mat4 uPMatrix;
+
+    // custom variables
+    varying vec3 vVertexPosition;
+    varying vec2 vTextureCoord;
+    varying vec2 vDisplacedTextureCoord;
+
+    varying vec2 vDistortionEffect;
+
+    // custom uniforms
+    uniform mat4 displacedImageMatrix;
+    uniform vec2 uMousePosition;
+
+    void main() {
+      vec3 vertexPosition = aVertexPosition;
+
+      gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
+
+      // varyings
+      vTextureCoord = aTextureCoord;
+      vDisplacedTextureCoord = (displacedImageMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+      vVertexPosition = vertexPosition;
+
+      vDistortionEffect = uMousePosition - vec2(vertexPosition.x, vertexPosition.y);
+    }
+  </script>
+
+  <script id="mouse-displacement-fs" type="x-shader/x-fragment">
+    #ifdef GL_ES
+      precision mediump float;
+    #endif
+
+    varying vec2 vTextureCoord;
+    varying vec2 vDisplacedTextureCoord;
+    varying vec2 vDistortionEffect;
+
+    // custom uniforms
+    uniform float uDisplacementStrength;
+
+    // our textures samplers
+    uniform sampler2D displacedImage;
+    uniform sampler2D canvasTexture;
+
+
+    void main( void ) {
+      // our texture coords
+      vec2 textureCoords = vTextureCoord;
+
+      // get our canvas texture
+        vec4 mouseEffect = texture2D(canvasTexture, textureCoords);
+
+      // apply displacement to the texture coords based on our canvas texture RGB
+      textureCoords  = vDisplacedTextureCoord + mouseEffect.r * vDistortionEffect * (uDisplacementStrength / 10.0);
+
+      // get our image texture
+      vec4 finalColor = texture2D(displacedImage, textureCoords);
+
+      // get a B&W version of our image texture
+      vec4 finalBW = vec4(1.0);
+      finalBW.rgb = vec3(0.5, finalColor.r * 0.3 + finalColor.g * 0.59 + finalColor.b * 0.11, 1.0);
+      float gray = dot(finalColor.rgb, vec3(0.299, 0.587, 0.114));
+      //float gray = dot(finalBW.rgb, vec3(0.299, 0.587, 0.114));
+
+      // mix both texture based on our canvas texture
+      //finalColor = mix(finalColor, finalBW, mouseEffect);
+      finalColor = mix(vec4(gray / 5.9), finalBW, mouseEffect);
+      //finalColor = mix(vec4(gray), finalColor, mouseEffect);
+
+      // that's all folks!
+      gl_FragColor = finalColor;
+    }
+  </script>
+</body>
+
+</html>
