@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackDashboard = require('webpack-dashboard/plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-let dir = 'docs';
+let dir = 'dist';
 
 const copy = new CopyWebpackPlugin(
   [
