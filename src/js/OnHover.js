@@ -1,4 +1,4 @@
-import { Curtains } from 'curtainsjs';
+import { Curtains } from './lib/curtains';
 
 export default class MouseEffect {
   constructor(params) {
