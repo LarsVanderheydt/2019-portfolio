@@ -4,15 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackDashboard = require('webpack-dashboard/plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const hasAPI = false;
-
-let dir = "";
-
-if (hasAPI) {
-  dir = 'server/public'
-} else {
-  dir = 'dist'
-}
+let dir = 'docs';
 
 const copy = new CopyWebpackPlugin(
   [

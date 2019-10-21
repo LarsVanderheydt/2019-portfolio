@@ -7,10 +7,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
 
   optimization: {
-    minimizer: [new UglifyJSPlugin({
-      test: /\.js$/,
-      sourceMap: true,
-    })],
+    minimizer: [new UglifyJSPlugin()],
   },
 
   plugins: [
