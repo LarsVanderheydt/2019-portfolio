@@ -38,6 +38,10 @@ export default class MouseEffect {
     }
   }
 
+  updateColors(x, y) {
+    this.plane.uniforms.colors.value = [x, y];
+  }
+
   resize() {
     if (this.canvas && this.canvasContext) {
       this.canvas.width = this.planeElement.clientWidth * this.pixelRatio * this.params.canvasScale;
@@ -55,13 +59,8 @@ export default class MouseEffect {
     this.mouse.position.x = e.clientX;
     this.mouse.position.y = e.clientY;
 
-    // this.params.colors.x = Math.random() * 1.0;
-    // console.log(this.params.colors.x);
-
-
     // touch event
     if (e.targetTouches) {
-
       this.mouse.position.x = e.targetTouches[0].clientX;
       this.mouse.position.y = e.targetTouches[0].clientY;
     }

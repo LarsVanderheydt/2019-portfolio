@@ -30,16 +30,16 @@ const initVue = () => {
 }
 
 window.onload = () => {
-  // init everything
-  const mouseEffect = new MouseEffect(params);
+  // // init everything
+  // const mouseEffect = new MouseEffect(params);
 
-  // if there's an error during the WebGL context creation
-  mouseEffect.curtains.onError(() => {
-    document.body.classList.add("no-webgl");
-  });
+  // // if there's an error during the WebGL context creation
+  // mouseEffect.curtains.onError(() => {
+  //   document.body.classList.add("no-webgl");
+  // });
 
-  // add the plane to start the effect
-  mouseEffect.addPlane();
+  // // add the plane to start the effect
+  // mouseEffect.addPlane();
 
   initVue();
 }
