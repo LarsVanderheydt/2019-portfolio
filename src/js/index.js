@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import MouseEffect from './OnHover';
-
+import Vue from 'vue';
+import App from './Vue/App.vue';
 
 const params = {
   webGLCanvasID: "canvas",
@@ -9,7 +10,7 @@ const params = {
   // TWEAK THOSE VALUES TO CHANGE OVERALL EFFECT
 
   // size of the effect (0: no effect, 1: full window)
-  pointerSize: 0.04,
+  pointerSize: 0.02,
   // how much to increase/decrease opacity on each frame
   opacitySpeed: 0.025,
   // strength of the velocity of the mouse effect
@@ -20,6 +21,18 @@ const params = {
   canvasScale: 0.525,
 };
 
+const initVue = () => {
+  new Vue({
+    el: '#app',
+    // store,
+
+    // beforeCreate() {
+    //   this.$store.dispatch('getProjects');
+    // },
+
+    render: h => h(App),
+  })
+}
 
 window.onload = () => {
   // init everything
@@ -32,4 +45,6 @@ window.onload = () => {
 
   // add the plane to start the effect
   mouseEffect.addPlane();
+
+  initVue();
 }

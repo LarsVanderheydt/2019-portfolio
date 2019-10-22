@@ -5,6 +5,8 @@
 @import './mixins/_iconize';
 @import './mixins/_rem';
 
+$nunito: 'Nunito', sans-serif;
+$acme: 'Acme', sans-serif;
 
 html {
   font-size: 100%;
@@ -20,6 +22,16 @@ html {
 ////////////////////////////////////
 /// here starts the real stuff  ////
 ////////////////////////////////////
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  @media only screen and (max-width: 700px) {
+    justify-content: flex-start;
+  }
+}
 
 .container {
   max-width: rem(1200);
@@ -27,27 +39,59 @@ html {
   width: 100%;
 }
 
-body {
+.landingpage {
   width: 100%;
-  height: 100%;
-  max-width: 100vw;
-  position: fixed; // to disable address bar scroll on mobile
+  max-width: rem(960);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: white;
-  font-family: 'Acme', sans-serif;
+  font-family: $acme;
+  transition: all .5s ease;
+  overflow-y: scroll;
+  padding-bottom: rem(20);
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+// Typography
+button {
+  appearance: none;
+  background: none;
+  color: white;
+  border: none;
+  font-size: rem(15);
+  padding: rem(10);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: block;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+a {
+  color: $white;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Homepage
 .homepage--title {
-  font-size: rem(45);
+  font-size: rem(35);
   margin: 0 auto;
 
   @media only screen and (max-width: 600px) {
@@ -63,59 +107,82 @@ body {
   justify-content: center;
 }
 
+$icon-width: 25px;
+$icon-height: 25px;
+
 .icon {
-  margin: rem(10) rem(10);
+  margin: rem(10) rem(7);
 
   &--drupal {
-    // @include iconize('drupal', 30px, 30px, #fff);
-    @include iconize('drupal', 30px, 30px, $icon);
+    @include iconize('drupal', $icon-width, $icon-height, $icon);
 
     &:hover {
-      @include iconize('drupal', 30px, 30px, $icon--hover);
+      @include iconize('drupal', $icon-width, $icon-height, $icon--hover);
     }
   }
 
   &--react {
-    @include iconize('react', 30px, 30px, $icon);
+    @include iconize('react', $icon-width, $icon-height, $icon);
 
     &:hover {
-      @include iconize('react', 30px, 30px, $icon--hover);
+      @include iconize('react', $icon-width, $icon-height, $icon--hover);
     }
   }
 
   &--vue {
-    @include iconize('vue', 30px, 30px, $icon);
+    @include iconize('vue', $icon-width, $icon-height, $icon);
     &:hover {
-      @include iconize('vue', 30px, 30px, $icon--hover);
+      @include iconize('vue', $icon-width, $icon-height, $icon--hover);
     }
   }
 
   &--webpack {
-    @include iconize('webpack', 30px, 30px, $icon);
+    @include iconize('webpack', $icon-width, $icon-height, $icon);
     &:hover {
-      @include iconize('webpack', 30px, 30px, $icon--hover);
+      @include iconize('webpack', $icon-width, $icon-height, $icon--hover);
     }
   }
 
   &--gulp {
-    @include iconize('gulp', 30px, 40px, $icon);
+    @include iconize('gulp', $icon-width, $icon-height + 5px, $icon);
     margin-bottom: rem(15);
     &:hover {
-      @include iconize('gulp', 30px, 40px, $icon--hover);
+      @include iconize('gulp', $icon-width, $icon-height + 5px, $icon--hover);
     }
   }
 
   &--github {
-    @include iconize('github', 30px, 40px, $icon);
+    @include iconize('github', $icon-width, $icon-height + 5px, $icon);
     &:hover {
-      @include iconize('github', 30px, 30px, $icon--hover);
+      @include iconize('github', $icon-width, $icon-height + 5px, $icon--hover);
     }
   }
 
   &--linkedin {
-    @include iconize('linkedin', 30px, 40px, $icon);
+    @include iconize('linkedin', $icon-width, $icon-height + 5px, $icon);
     &:hover {
-      @include iconize('linkedin', 30px, 30px, $icon--hover);
+      @include iconize('linkedin', $icon-width, $icon-height + 5px, $icon--hover);
+    }
+  }
+
+  &--vimeo {
+    @include iconize('vimeo', $icon-width, $icon-height, $icon);
+    &:hover {
+      @include iconize('vimeo', $icon-width, $icon-height, $icon--hover);
+    }
+  }
+
+  &--behance {
+    @include iconize('behance', $icon-width, $icon-height, $icon);
+    &:hover {
+      @include iconize('behance', $icon-width, $icon-height, $icon--hover);
+    }
+  }
+
+  &--website {
+    @include iconize('website', $icon-width, $icon-height, $icon);
+    &:hover {
+      @include iconize('website', $icon-width, $icon-height, $icon--hover);
     }
   }
 }
@@ -147,4 +214,78 @@ body {
   object-fit: cover;
   min-width: 100%;
   min-height: 100%;
+}
+
+// Projects
+.projects {
+  display: flex;
+
+  &--list {
+    transition: all .5s ease;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.329);
+    margin-right: 5%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+
+    &--list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        margin: 0 rem(15);
+      }
+    }
+  }
+}
+
+.projects {
+  &--info {
+    line-height: 1.4;
+    font-family: $nunito;
+    width: 50%;
+
+    &--title {
+      font-size: rem(20);
+      font-family: $acme;
+      margin-bottom: rem(5);
+    }
+
+    &--urls {
+      margin-top: rem(10);
+      display: flex;
+      align-items: center;
+
+      li {
+        margin: 0 rem(7);
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    &--info {
+      width: 100%;
+      max-width: rem(500);
+      margin: 0 auto;
+      margin-top: rem(25);
+      padding: 0 rem(10);
+    }
+  }
+}
+
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
 }

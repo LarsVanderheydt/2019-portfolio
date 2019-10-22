@@ -1,8 +1,8 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackDashboard = require('webpack-dashboard/plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 let dir = 'dist';
 
@@ -32,7 +32,10 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [`.js`, `.css`],
+    extensions: [`.js`, `.css`, `*`],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    }
   },
 
   module: {
@@ -45,6 +48,10 @@ module.exports = {
             loader: `babel-loader`,
           },
         ],
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
       },
       {
         test: /\.(png|jpg)$/,
@@ -72,7 +79,7 @@ module.exports = {
     ],
   },
 
-  plugins: [copy, new CleanWebpackPlugin([dir]), new webpackDashboard(), new ExtractTextPlugin({ // define where to save the file
+  plugins: [copy, new webpackDashboard(), new VueLoaderPlugin(), new ExtractTextPlugin({ // define where to save the file
     filename: 'css/[name].bundle.css',
     allChunks: true,
   })],

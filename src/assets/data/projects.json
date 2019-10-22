@@ -1,0 +1,169 @@
+[
+
+  {
+      "id": "babiesworld",
+      "name": "Babies World",
+      "year": "2018",
+      "body": "A final thesis for my school career. The assignment 'Fertility awareness in Belgium', where we had to make a campaign in groups of two to invent and create the campaign. These where 4 intense weeks of research, design and development| This project was made with <a href='' class='link' target='_blank'>Yves-Laurent</a>",
+      "tech": ["React", "SocketIO"],
+      "imgs": 4,
+      "urls": {
+          "website": "https://babiesworld.herokuapp.com/",
+          "vimeo": "https://vimeo.com/256921167",
+          "behance": "https://www.behance.net/gallery/62407667/Babys-World-BAP-Devine",
+          "github": "https://github.com/LarsVanderheydt/Babies_World"
+      }
+  },
+
+  {
+      "id": "christmascard",
+      "name": "Christmas Card",
+      "year": "2017",
+      "body": "A fun development assignment for the class Experimental web. Another group project of groups of 2. We had to combine two experimental technologies from a given list and make something, it could literally be anything| The technologies where Service​ ​Workers, Web​ ​Midi, Web​ ​Audio, WebVR, Deep​ ​Learning​ ​/​ ​Machine​ ​Learning, asm.js. <a href='https://experiments.withgoogle.com/chrome' class='link' targe='_blank'>This website</a> had a lot of inspiration| So as it was about to be Christmas we made an interactive Christmas card where you could send a message to a loved one by speaking to your computer and adjust the pitch. A fun extra was the <a href='https://cloud.google.com/speech/?hl=nl' class='link' target='_blank'>Google Speech API</a> where you didn't have to type your message again| This project was made with <a href='' class='link' target='_blank'>Louise</a>",
+      "tech": ["ThreeJS", "NodeJS", "MongoDB", "Mongoose"],
+      "imgs": 3,
+      "urls": {
+          "website": "https://experimentalweb.herokuapp.com/",
+          "youtube": "https://www.youtube.com/watch?v=ql5TH0iBQEU",
+          "github": "https://github.com/LarsVanderheydt/Interactive-christmas-card"
+      }
+  },
+
+  {
+      "id": "boskospad",
+      "name": "Boskos Pad",
+      "year": "2018",
+      "body": "",
+      "tech": ["ThreeJS", "Arduino", "Johnny Five", "Electron"],
+      "imgs": 5,
+      "urls": {
+          "github": "https://github.com/LarsVanderheydt/Boskos_Pad"
+      }
+  },
+
+  {
+      "id": "zombie_shooter",
+      "name": "Zombie Shooter",
+      "year": "2016",
+      "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Zombie Shooter was our part one and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Snail Game</a> was our part two| Note: Go to the admin page by <a href='http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
+      "tech": ["Phaser", "PHP"],
+      "imgs": 4,
+      "urls": {
+          "github": "https://github.com/LarsVanderheydt/DevineZ",
+          "website": "http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/"
+      }
+  },
+
+  {
+      "id": "tribute",
+      "name": "Tribute",
+      "year": "2017",
+      "body": "A final for semester 3 where we had to work 3 weeks on this project. Again a group project. Here we where given a few names of popular singers who had passed away. We had to choose one of them and make a tribute website, but not the usual. We had to present them in a way not most people knew them| We chose for Michael Jackson and presented him through his cloting style| This project had it's requirements to, the page must at least have 1500 words, a creative video that fits the page and two interactive React components| This project was made with <a href='' class='link'>Yves-Laurent</a>",
+      "tech": ["React"],
+      "imgs": 10,
+      "urls": {
+          "website": "http://student.howest.be/lars.vanderheydt/20162017/ma4/tribute/",
+          "github": "https://github.com/LarsVanderheydt/Michael_Jackson"
+      }
+  },
+
+  {
+      "id": "wordsearch",
+      "name": "Word Search",
+      "year": "2018",
+      "body": "A little project I got for my internship, there was a webshop with some specific costumizable stuff. So there was also a word search where you could put in your own words| Here I had to make the word search including the change of color and it had to have a chance of overlapping to make it look way nicer| As this is pure the logic I didn't put much effort on the styling",
+      "tech": ["React"],
+      "imgs": 5,
+      "urls": {
+          "website": "https://wordsearch-zywmxrkwgv.now.sh/",
+          "github": "https://github.com/LarsVanderheydt/Wordsearch"
+      }
+  },
+
+  {
+      "id": "mskghent",
+      "name": "MSK Ghent",
+      "year": "2017",
+      "body": "The final of year 2 and the most fun project I worked on. We had to work in groups of 4, 3 Deviners and 1 student of the university of Rotterdam. So we had one week where the other students came to Belgium 1 week where we worked from distance and 1 week where we went to Rotterdam| The project was to attract people to the MSK Museum in Ghent, it had to be accessible for everyone ",
+      "tech": ["React", "NodeJS", "MongoDB", "Mongoose"],
+      "imgs": 5,
+      "urls": {
+          "website": "https://calm-refuge-75578.herokuapp.com/story",
+          "behance": "https://www.behance.net/gallery/57456197/MSK-Museum-of-Fine-Arts-Ghent",
+          "github": "https://github.com/LarsVanderheydt/MSK_Ghent",
+          "vimeo": "https://vimeo.com/236486316"
+      }
+  },
+
+  {
+      "id": "mapbox",
+      "name": "Mapbox",
+      "year": "2018",
+      "body": "First I created a basic page with the tutorial code found on the <a href=\"http://mapbox.com\" target=\"_blank\" class=\"link\">Mapbox website</a>| After this was done I could create my own map and just change the link of the mapstyle| Last I found the flyTo method, this was just a mather of finding the right coordinates and that’s it!",
+      "tech": ["Javascript", "Mapbox"],
+      "imgs": 5,
+      "urls": {
+          "website": "https://mapbox-ostend-ghent-ostwxxqcvs.now.sh/#16/51.230214/2.925141/-45/60",
+          "github": "https://github.com/LarsVanderheydt/mapbox-fly-3d"
+      }
+  },
+
+  {
+      "id": "webpack",
+      "name": "Webpack Boilerplate",
+      "year": "2018",
+      "body": "A home project for when I want to use a basic webpack setup.",
+      "tech": ["Webpack"],
+      "urls": {
+          "github": "https://github.com/LarsVanderheydt/webpack-boilerplate"
+      }
+  },
+
+
+  {
+      "id": "reactboilerplate",
+      "name": "React Boilerplate",
+      "year": "2018",
+      "body": "A home project for when I want to use a basic React setup with webpack instead of the Create-react-app",
+      "tech": ["Webpack", "React"],
+      "urls": {
+          "github": "https://github.com/LarsVanderheydt/react-boilerplate"
+      }
+  },
+
+  {
+      "id": "snail_game",
+      "name": "Snail Game",
+      "year": "2016",
+      "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Snail Game was second part and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Zombie Shooter</a> was our first one| Note: Go to the admin page by <a href='http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
+      "tech": ["Phaser", "Javascript", "PHP"],
+      "imgs": 4,
+      "urls": {
+          "github": "https://github.com/LarsVanderheydt/BobbyTheSnail",
+          "website": "http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/"
+      }
+  },
+
+  {
+      "id": "ipresent",
+      "name": "iPresent",
+      "year": "2017",
+      "body": "A native iOS app for iPhone. Assignment was to present a brand or product, it had a few requirements| It had to have a minimum of 3 screens at least text and video or images| Last was the data, it had to come from a online or offline JSON file",
+      "tech": ["Swift"],
+      "urls": {
+          "vimeo": "https://vimeo.com/262958575"
+      }
+  },
+
+
+  {
+      "id": "jaspr",
+      "name": "Jaspr",
+      "year": "2017",
+      "body": "Another school assignment for the class Motion, we had to pick a kickstarter and make an explainer video for it| This was my result. As i’m not the best at illustrating i’m still happy with the result.",
+      "tech": [],
+      "urls": {
+          "vimeo": "https://vimeo.com/237125337"
+      }
+  }
+]

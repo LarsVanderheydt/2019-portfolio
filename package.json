@@ -11,13 +11,18 @@
     "client": "webpack --watch --config webpack.dev.js --mode development"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "@babel/runtime": "^7.6.3",
+    "jquery": "^3.4.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^8.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
@@ -32,6 +37,7 @@
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^2.2.0",
+    "vue-loader": "^15.7.1",
     "webpack": "^4.19.0",
     "webpack-cli": "^3.1.0",
     "webpack-dashboard": "^2.0.0",
