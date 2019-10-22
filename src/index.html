@@ -109,6 +109,7 @@
 
     // custom uniforms
     uniform float uDisplacementStrength;
+    uniform vec2 uColors;
 
     // our textures samplers
     uniform sampler2D displacedImage;
@@ -130,7 +131,7 @@
 
       // get a B&W version of our image texture
       vec4 finalBW = vec4(1.0);
-      finalBW.rgb = vec3(0.5, finalColor.r * 0.3 + finalColor.g * 0.59 + finalColor.b * 0.11, 1.0);
+      finalBW.rgb = vec3(uColors.r, finalColor.r * 0.3 + finalColor.g * 0.59 + finalColor.b * 0.11, uColors.g);
       float gray = dot(finalColor.rgb, vec3(0.299, 0.587, 0.114));
       //float gray = dot(finalBW.rgb, vec3(0.299, 0.587, 0.114));
 

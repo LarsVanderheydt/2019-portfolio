@@ -225,6 +225,14 @@ $icon-height: 25px;
     width: 20%;
     background-color: rgba(0, 0, 0, 0.329);
     margin-right: 5%;
+    max-height: rem(500);
+
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 700px) {

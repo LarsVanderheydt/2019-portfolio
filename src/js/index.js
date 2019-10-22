@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import MouseEffect from './OnHover';
+import MouseEffect from './MouseEffect';
 import Vue from 'vue';
 import App from './Vue/App.vue';
 
@@ -19,17 +19,12 @@ const params = {
   displacementStrength: 0.125,
   // does not change anything visually, but the smaller the scale the better the performance
   canvasScale: 0.525,
+  colors: [0.5, 1.0]
 };
 
 const initVue = () => {
   new Vue({
     el: '#app',
-    // store,
-
-    // beforeCreate() {
-    //   this.$store.dispatch('getProjects');
-    // },
-
     render: h => h(App),
   })
 }

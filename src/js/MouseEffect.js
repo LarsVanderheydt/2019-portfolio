@@ -26,6 +26,7 @@ export default class MouseEffect {
       velocityStrength: params.velocityStrength || 0.25,
       displacementStrength: params.displacementStrength || 0.25,
       canvasScale: params.canvasScale || 0.125,
+      colors: params.colors || [0.5, 1.0]
     };
 
     this.canvas = null;
@@ -53,6 +54,10 @@ export default class MouseEffect {
   handleMovement(e) {
     this.mouse.position.x = e.clientX;
     this.mouse.position.y = e.clientY;
+
+    // this.params.colors.x = Math.random() * 1.0;
+    // console.log(this.params.colors.x);
+
 
     // touch event
     if (e.targetTouches) {
@@ -239,6 +244,11 @@ export default class MouseEffect {
           type: "1f",
           value: this.params.displacementStrength,
         },
+        colors: {
+          name: "uColors",
+          type: "2f",
+          value: this.params.colors
+        }
       },
     };
 

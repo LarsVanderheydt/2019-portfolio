@@ -16,10 +16,6 @@
 export default {
   props: {
     project: Object
-  },
-
-  created() {
-    console.log(this.project.urls);
   }
 }
 </script>

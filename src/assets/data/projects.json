@@ -1,169 +1,269 @@
-[
-
-  {
-      "id": "babiesworld",
-      "name": "Babies World",
-      "year": "2018",
-      "body": "A final thesis for my school career. The assignment 'Fertility awareness in Belgium', where we had to make a campaign in groups of two to invent and create the campaign. These where 4 intense weeks of research, design and development| This project was made with <a href='' class='link' target='_blank'>Yves-Laurent</a>",
-      "tech": ["React", "SocketIO"],
-      "imgs": 4,
-      "urls": {
-          "website": "https://babiesworld.herokuapp.com/",
-          "vimeo": "https://vimeo.com/256921167",
-          "behance": "https://www.behance.net/gallery/62407667/Babys-World-BAP-Devine",
-          "github": "https://github.com/LarsVanderheydt/Babies_World"
-      }
+[{
+    "id": "portfolio",
+    "name": "This website",
+    "year": "2019",
+    "body": "This portfolio was created to have an overview of all my projects, school and free time related. What I really want to make clear is that the effects are created using curtainsJS and a combination of there codepen examples. Previously I learned about shaders, but these are pretty hard but the effects are pretty cool! So by learning about them and trying to understand the code I am able to tweak the examples to my will. To learn which examples were used see the Github repo below.",
+    "tech": [],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/portfolio"
+    }
   },
 
   {
-      "id": "christmascard",
-      "name": "Christmas Card",
-      "year": "2017",
-      "body": "A fun development assignment for the class Experimental web. Another group project of groups of 2. We had to combine two experimental technologies from a given list and make something, it could literally be anything| The technologies where Service​ ​Workers, Web​ ​Midi, Web​ ​Audio, WebVR, Deep​ ​Learning​ ​/​ ​Machine​ ​Learning, asm.js. <a href='https://experiments.withgoogle.com/chrome' class='link' targe='_blank'>This website</a> had a lot of inspiration| So as it was about to be Christmas we made an interactive Christmas card where you could send a message to a loved one by speaking to your computer and adjust the pitch. A fun extra was the <a href='https://cloud.google.com/speech/?hl=nl' class='link' target='_blank'>Google Speech API</a> where you didn't have to type your message again| This project was made with <a href='' class='link' target='_blank'>Louise</a>",
-      "tech": ["ThreeJS", "NodeJS", "MongoDB", "Mongoose"],
-      "imgs": 3,
-      "urls": {
-          "website": "https://experimentalweb.herokuapp.com/",
-          "youtube": "https://www.youtube.com/watch?v=ql5TH0iBQEU",
-          "github": "https://github.com/LarsVanderheydt/Interactive-christmas-card"
-      }
+    "id": "babiesworld",
+    "name": "Babies World",
+    "year": "2018",
+    "body": "A final thesis for my school career. The assignment 'Fertility awareness in Belgium', where we had to make a campaign in groups of two to invent and create the campaign. These where 4 intense weeks of research, design and development| This project was made with <a href='' class='link' target='_blank'>Yves-Laurent</a>",
+    "tech": ["React", "SocketIO"],
+    "imgs": 4,
+    "urls": {
+      "website": "https://babiesworld.herokuapp.com/",
+      "vimeo": "https://vimeo.com/256921167",
+      "behance": "https://www.behance.net/gallery/62407667/Babys-World-BAP-Devine",
+      "github": "https://github.com/LarsVanderheydt/Babies_World"
+    }
   },
 
   {
-      "id": "boskospad",
-      "name": "Boskos Pad",
-      "year": "2018",
-      "body": "",
-      "tech": ["ThreeJS", "Arduino", "Johnny Five", "Electron"],
-      "imgs": 5,
-      "urls": {
-          "github": "https://github.com/LarsVanderheydt/Boskos_Pad"
-      }
+    "id": "christmascard",
+    "name": "Christmas Card",
+    "year": "2017",
+    "body": "A fun development assignment for the class Experimental web. Another group project of groups of 2. We had to combine two experimental technologies from a given list and make something, it could literally be anything| The technologies where Service​ ​Workers, Web​ ​Midi, Web​ ​Audio, WebVR, Deep​ ​Learning​ ​/​ ​Machine​ ​Learning, asm.js. <a href='https://experiments.withgoogle.com/chrome' class='link' targe='_blank'>This website</a> had a lot of inspiration| So as it was about to be Christmas we made an interactive Christmas card where you could send a message to a loved one by speaking to your computer and adjust the pitch. A fun extra was the <a href='https://cloud.google.com/speech/?hl=nl' class='link' target='_blank'>Google Speech API</a> where you didn't have to type your message again| This project was made with <a href='' class='link' target='_blank'>Louise</a>",
+    "tech": ["ThreeJS", "NodeJS", "MongoDB", "Mongoose"],
+    "imgs": 3,
+    "urls": {
+      "website": "https://experimentalweb.herokuapp.com/",
+      "youtube": "https://www.youtube.com/watch?v=ql5TH0iBQEU",
+      "github": "https://github.com/LarsVanderheydt/Interactive-christmas-card"
+    }
   },
 
   {
-      "id": "zombie_shooter",
-      "name": "Zombie Shooter",
-      "year": "2016",
-      "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Zombie Shooter was our part one and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Snail Game</a> was our part two| Note: Go to the admin page by <a href='http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
-      "tech": ["Phaser", "PHP"],
-      "imgs": 4,
-      "urls": {
-          "github": "https://github.com/LarsVanderheydt/DevineZ",
-          "website": "http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/"
-      }
+    "id": "boskospad",
+    "name": "Boskos Pad",
+    "year": "2018",
+    "body": "An interactive game/experience for children made for JEFF festival as a school assignment. This has to be my most fun & frustrating project of my school career. The combination with Threejs/Arduino/Electron made up for a lot of fun, especially with my background in electricity and domotica. But making use of 2 arduino's made for a lot of small cables on a small surface so debugging wires the hour before presentation was hell. But we made it! This project was made together with <a href='' class='link' target='_blank'>Louise</a>",
+    "tech": ["ThreeJS", "Arduino", "Johnny Five", "Electron"],
+    "imgs": 5,
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/Boskos_Pad"
+    }
   },
 
   {
-      "id": "tribute",
-      "name": "Tribute",
-      "year": "2017",
-      "body": "A final for semester 3 where we had to work 3 weeks on this project. Again a group project. Here we where given a few names of popular singers who had passed away. We had to choose one of them and make a tribute website, but not the usual. We had to present them in a way not most people knew them| We chose for Michael Jackson and presented him through his cloting style| This project had it's requirements to, the page must at least have 1500 words, a creative video that fits the page and two interactive React components| This project was made with <a href='' class='link'>Yves-Laurent</a>",
-      "tech": ["React"],
-      "imgs": 10,
-      "urls": {
-          "website": "http://student.howest.be/lars.vanderheydt/20162017/ma4/tribute/",
-          "github": "https://github.com/LarsVanderheydt/Michael_Jackson"
-      }
+    "id": "zombie_shooter",
+    "name": "Zombie Shooter",
+    "year": "2016",
+    "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Zombie Shooter was our part one and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Snail Game</a> was our part two| Note: Go to the admin page by <a href='http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
+    "tech": ["Phaser", "PHP"],
+    "imgs": 4,
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/DevineZ",
+      "website": "http://student.howest.be/louise.de.brauwer/20162017/COD/GAME/"
+    }
   },
 
   {
-      "id": "wordsearch",
-      "name": "Word Search",
-      "year": "2018",
-      "body": "A little project I got for my internship, there was a webshop with some specific costumizable stuff. So there was also a word search where you could put in your own words| Here I had to make the word search including the change of color and it had to have a chance of overlapping to make it look way nicer| As this is pure the logic I didn't put much effort on the styling",
-      "tech": ["React"],
-      "imgs": 5,
-      "urls": {
-          "website": "https://wordsearch-zywmxrkwgv.now.sh/",
-          "github": "https://github.com/LarsVanderheydt/Wordsearch"
-      }
+    "id": "tribute",
+    "name": "Tribute",
+    "year": "2017",
+    "body": "A final for semester 3 where we had to work 3 weeks on this project. Again a group project. Here we where given a few names of popular singers who had passed away. We had to choose one of them and make a tribute website, but not the usual. We had to present them in a way not most people knew them| We chose for Michael Jackson and presented him through his cloting style| This project had it's requirements to, the page must at least have 1500 words, a creative video that fits the page and two interactive React components| This project was made with <a href='' class='link'>Yves-Laurent</a>",
+    "tech": ["React"],
+    "imgs": 10,
+    "urls": {
+      "website": "http://student.howest.be/lars.vanderheydt/20162017/ma4/tribute/",
+      "github": "https://github.com/LarsVanderheydt/Michael_Jackson"
+    }
   },
 
   {
-      "id": "mskghent",
-      "name": "MSK Ghent",
-      "year": "2017",
-      "body": "The final of year 2 and the most fun project I worked on. We had to work in groups of 4, 3 Deviners and 1 student of the university of Rotterdam. So we had one week where the other students came to Belgium 1 week where we worked from distance and 1 week where we went to Rotterdam| The project was to attract people to the MSK Museum in Ghent, it had to be accessible for everyone ",
-      "tech": ["React", "NodeJS", "MongoDB", "Mongoose"],
-      "imgs": 5,
-      "urls": {
-          "website": "https://calm-refuge-75578.herokuapp.com/story",
-          "behance": "https://www.behance.net/gallery/57456197/MSK-Museum-of-Fine-Arts-Ghent",
-          "github": "https://github.com/LarsVanderheydt/MSK_Ghent",
-          "vimeo": "https://vimeo.com/236486316"
-      }
+    "id": "wordsearch",
+    "name": "Word Search",
+    "year": "2018",
+    "body": "A little project I got for my internship, there was a webshop with some specific costumizable stuff. So there was also a word search where you could put in your own words| Here I had to make the word search including the change of color and it had to have a chance of overlapping to make it look way nicer| As this is pure the logic I didn't put much effort on the styling",
+    "tech": ["React"],
+    "imgs": 5,
+    "urls": {
+      "website": "https://wordsearch-zywmxrkwgv.now.sh/",
+      "github": "https://github.com/LarsVanderheydt/Wordsearch"
+    }
   },
 
   {
-      "id": "mapbox",
-      "name": "Mapbox",
-      "year": "2018",
-      "body": "First I created a basic page with the tutorial code found on the <a href=\"http://mapbox.com\" target=\"_blank\" class=\"link\">Mapbox website</a>| After this was done I could create my own map and just change the link of the mapstyle| Last I found the flyTo method, this was just a mather of finding the right coordinates and that’s it!",
-      "tech": ["Javascript", "Mapbox"],
-      "imgs": 5,
-      "urls": {
-          "website": "https://mapbox-ostend-ghent-ostwxxqcvs.now.sh/#16/51.230214/2.925141/-45/60",
-          "github": "https://github.com/LarsVanderheydt/mapbox-fly-3d"
-      }
+    "id": "mskghent",
+    "name": "MSK Ghent",
+    "year": "2017",
+    "body": "The final of year 2 and the most fun project I worked on. We had to work in groups of 4, 3 Deviners and 1 student of the university of Rotterdam. So we had one week where the other students came to Belgium 1 week where we worked from distance and 1 week where we went to Rotterdam| The project was to attract people to the MSK Museum in Ghent, it had to be accessible for everyone ",
+    "tech": ["React", "NodeJS", "MongoDB", "Mongoose"],
+    "imgs": 5,
+    "urls": {
+      "website": "https://calm-refuge-75578.herokuapp.com/story",
+      "behance": "https://www.behance.net/gallery/57456197/MSK-Museum-of-Fine-Arts-Ghent",
+      "github": "https://github.com/LarsVanderheydt/MSK_Ghent",
+      "vimeo": "https://vimeo.com/236486316"
+    }
   },
 
   {
-      "id": "webpack",
-      "name": "Webpack Boilerplate",
-      "year": "2018",
-      "body": "A home project for when I want to use a basic webpack setup.",
-      "tech": ["Webpack"],
-      "urls": {
-          "github": "https://github.com/LarsVanderheydt/webpack-boilerplate"
-      }
-  },
-
-
-  {
-      "id": "reactboilerplate",
-      "name": "React Boilerplate",
-      "year": "2018",
-      "body": "A home project for when I want to use a basic React setup with webpack instead of the Create-react-app",
-      "tech": ["Webpack", "React"],
-      "urls": {
-          "github": "https://github.com/LarsVanderheydt/react-boilerplate"
-      }
+    "id": "mapbox",
+    "name": "Mapbox",
+    "year": "2018",
+    "body": "First I created a basic page with the tutorial code found on the <a href=\"http://mapbox.com\" target=\"_blank\" class=\"link\">Mapbox website</a>| After this was done I could create my own map and just change the link of the mapstyle| Last I found the flyTo method, this was just a mather of finding the right coordinates and that’s it!",
+    "tech": ["Javascript", "Mapbox"],
+    "imgs": 5,
+    "urls": {
+      "website": "https://mapbox-ostend-ghent-ostwxxqcvs.now.sh/#16/51.230214/2.925141/-45/60",
+      "github": "https://github.com/LarsVanderheydt/mapbox-fly-3d"
+    }
   },
 
   {
-      "id": "snail_game",
-      "name": "Snail Game",
-      "year": "2016",
-      "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Snail Game was second part and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Zombie Shooter</a> was our first one| Note: Go to the admin page by <a href='http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
-      "tech": ["Phaser", "Javascript", "PHP"],
-      "imgs": 4,
-      "urls": {
-          "github": "https://github.com/LarsVanderheydt/BobbyTheSnail",
-          "website": "http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/"
-      }
-  },
-
-  {
-      "id": "ipresent",
-      "name": "iPresent",
-      "year": "2017",
-      "body": "A native iOS app for iPhone. Assignment was to present a brand or product, it had a few requirements| It had to have a minimum of 3 screens at least text and video or images| Last was the data, it had to come from a online or offline JSON file",
-      "tech": ["Swift"],
-      "urls": {
-          "vimeo": "https://vimeo.com/262958575"
-      }
+    "id": "webpack",
+    "name": "Webpack Boilerplate",
+    "year": "2018",
+    "body": "A home project for when I want to use a basic webpack setup.",
+    "tech": ["Webpack"],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/webpack-boilerplate"
+    }
   },
 
 
   {
-      "id": "jaspr",
-      "name": "Jaspr",
-      "year": "2017",
-      "body": "Another school assignment for the class Motion, we had to pick a kickstarter and make an explainer video for it| This was my result. As i’m not the best at illustrating i’m still happy with the result.",
-      "tech": [],
-      "urls": {
-          "vimeo": "https://vimeo.com/237125337"
-      }
+    "id": "reactboilerplate",
+    "name": "React Boilerplate",
+    "year": "2018",
+    "body": "A home project for when I want to use a basic React setup with webpack instead of the Create-react-app",
+    "tech": ["Webpack", "React"],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/react-boilerplate"
+    }
+  },
+
+  {
+    "id": "snail_game",
+    "name": "Snail Game",
+    "year": "2016",
+    "body": "A school assignment for the class Collaborative Development. Here we had to work in groups of 2 to create a <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">PhaserJS</a> game, but there was a twist| Halfway this project we had to switch projects with another group and work on there project. So the Snail Game was second part and the <a href=\"https://phaser.io/\" target=\"_blank\" class=\"link\">Zombie Shooter</a> was our first one| Note: Go to the admin page by <a href='http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/index.php?page=stats' target='_blank' class='link'>clicking here</a>",
+    "tech": ["Phaser", "Javascript", "PHP"],
+    "imgs": 4,
+    "urls": {
+      "website": "http://student.howest.be/lars.vanderheydt/20162017/COD/GAME/",
+      "github": "https://github.com/LarsVanderheydt/BobbyTheSnail"
+    }
+  },
+
+  {
+    "id": "ipresent",
+    "name": "iPresent",
+    "year": "2017",
+    "body": "A native iOS app for iPhone. Assignment was to present a brand or product, it had a few requirements| It had to have a minimum of 3 screens at least text and video or images| Last was the data, it had to come from a online or offline JSON file",
+    "tech": ["Swift"],
+    "urls": {
+      "vimeo": "https://vimeo.com/262958575"
+    }
+  },
+
+
+  {
+    "id": "jaspr",
+    "name": "Jaspr",
+    "year": "2017",
+    "body": "Another school assignment for the class Motion, we had to pick a kickstarter and make an explainer video for it| This was my result. As i’m not the best at illustrating i’m still happy with the result.",
+    "tech": [],
+    "urls": {
+      "vimeo": "https://vimeo.com/237125337"
+    }
+  },
+
+  {
+    "id": "generate",
+    "name": "Generate",
+    "year": "2018",
+    "body": "To learn how to create my custom npm module I build a boilerplate manager. This was when I had a few boilerplates at my hand that I created myself. So instead of going to github all the time and downloading my boilerplate I created this module that clones it and deletes the .git folder. But this project was mostly to experiment with custom npm modules in the registry.",
+    "tech": ["NodeJS", "npm"],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/generate"
+    }
+  },
+
+  {
+    "id": "webpack-module",
+    "name": "Webpack sass autoloader",
+    "year": "2018",
+    "body": "I wondered a few times how I could build my own webpack plugin, this was after my custom npm module. But when I noticed that using gulp you could easily include a glob pattern to import a lot of files simultaniously and with webpack you couldn't. So I started this little project, it isn't perfect by far but it was a fun little project.",
+    "tech": ["NodeJS", "Webpack"],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/webpack-sass-autoloader"
+    }
+  },
+
+  {
+    "id": "threejs-started",
+    "name": "Threejs starter",
+    "year": "2019",
+    "body": "Discovering the <a href='https://thebookofshaders.com/'>The book of shaders</a> was really cool, I took a huge interest in it. And by discovering it I found myself creating the same basic setup over and over so I tried to make a Threejs basic boilerplate with the most used features so I could start over easily.",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "github": "https://github.com/LarsVanderheydt/threejs-starter"
+    }
+  },
+
+  {
+    "id": "threejs-fragment-shader-with-shadows",
+    "name": "Threejs fragment shader",
+    "year": "2019",
+    "body": "After/while reading <a href='https://thebookofshaders.com/'>The book of shaders</a> I experimented a lot with Threejs and custom shaders. At one point I wanted my shaders to be affected by the surrounded lights, but this had to be implemented in the fragmentshaders itself. And realising that I am not able to create the mathematical function myself I started looking around for examples. So after bit of searching I found a few examples and implemented them into one. And this was my result.",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "website": "https://fragmentshaders-lights-hkuairyrue.now.sh/",
+      "github": "https://github.com/LarsVanderheydt/threejs-fragment-shader-with-shadows"
+    }
+  },
+
+
+  {
+    "id": "threejs-3d-animated-runner",
+    "name": "Threejs animated runner",
+    "year": "2019",
+    "body": "After experimenting a lot with Threejs and its .gltf importer I discovered at D'M&S a colleague made an animated runner for a website they made in the past. So I asked if I could play around with the 3D model and its animations. And this was my result.",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "website": "https://zeit-crcnwcnniv.now.sh/",
+      "github": "https://github.com/LarsVanderheydt/3d-animated-runner-looking-at-mouse"
+    }
+  },
+
+  {
+    "id": "threejs-hover-effect",
+    "name": "Threejs smoke effect",
+    "year": "2019",
+    "body": "An example of playing around with Shaders, the idea was to eventually create a hover effect on a button, but first I wanted to see the result of a hover effect on a plane.",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "website": "https://shadersmoke-cmwzazwzgh.now.sh/"
+    }
+  },
+
+  {
+    "id": "threejs-animated-guy-with-shader",
+    "name": "Threejs animation with shader",
+    "year": "2019",
+    "body": "Combining an animation object with shaders",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "website": "https://playgroundstatic-gtzpevmrde.now.sh/"
+    }
+  },
+
+  {
+    "id": "threejs-animations-fader",
+    "name": "Threejs animations system",
+    "year": "2019",
+    "body": "Threejs and it's very awesome animation system.",
+    "tech": ["ThreeJS", "Javascript"],
+    "urls": {
+      "website": "https://threejsanimationsystel-ochrosprdf.now.sh/"
+    }
   }
 ]

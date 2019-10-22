@@ -12,8 +12,9 @@
 
 <script>
 import Detail from './Detail.vue';
-export default {
+import MouseEffect from '../MouseEffect';
 
+export default {
   beforeCreate() {
     fetch('../../assets/data/projects.json')
       .then(d => d.json())
@@ -26,14 +27,19 @@ export default {
       const active = e.target.id;
       const project = this.projects.find(p => p.id === active);
       this.active = project;
-
+      this.colors.x = Math.random() * 1.0;
+      this.colors.y = Math.random() * 1.0;
     }
   },
 
   data() {
     return {
       projects: [],
-      active: null
+      active: null,
+      colors: {
+        x: null,
+        y: null
+      }
     }
   },
 
