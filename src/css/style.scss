@@ -14,6 +14,10 @@ html {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 ::selection {
   color: $black;
   background-color: $white;
@@ -293,7 +297,21 @@ $icon-height: 25px;
 .list-enter-active, .list-leave-active {
   transition: all 1s;
 }
-.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+
+.list-enter, .list-leave-to {
   opacity: 0;
   transform: translateY(30px);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+
+  @media only screen and (max-width: 700px) {
+    transform: translateY(30px);
+  }
 }

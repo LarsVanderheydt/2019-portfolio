@@ -6,7 +6,9 @@
       </li>
     </transition-group>
 
-    <Detail v-if="active" v-bind:project="active"></Detail>
+    <transition name="fade" mode="out-in" tag="div">
+      <Detail v-if="active" :key="active.id" v-bind:project="active"></Detail>
+    </transition>
   </div>
 </template>
 
@@ -44,7 +46,6 @@ export default {
 
   created() {
     // init everything
-
 
     // if there's an error during the WebGL context creation
     mouseEffect.curtains.onError(() => {
