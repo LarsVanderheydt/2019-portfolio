@@ -189,6 +189,13 @@ $icon-height: 25px;
       @include iconize('website', $icon-width, $icon-height, $icon--hover);
     }
   }
+
+  &--youtube {
+    @include iconize('youtube', $icon-width, $icon-height, $icon);
+    &:hover {
+      @include iconize('youtube', $icon-width, $icon-height, $icon--hover);
+    }
+  }
 }
 
 // Background
