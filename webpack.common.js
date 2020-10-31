@@ -6,19 +6,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 let dir = 'dist';
 
-const copy = new CopyWebpackPlugin([{
-    from: `./src/assets`,
-    to: `./assets`,
-  }, {
-    from: `./src/**.html`,
-    to: `./`,
-    flatten: true,
-  }],
-  {
-    ignore: [`.DS_Store`],
-  },
-);
-
 module.exports = {
   entry: ['./src/js/index.js', './src/css/style.scss'],
 
@@ -70,12 +57,29 @@ module.exports = {
   },
 
   plugins: [
-    copy,
     new webpackDashboard(),
     new VueLoaderPlugin(),
     new ExtractTextPlugin({ // define where to save the file
       filename: 'css/[name].bundle.css',
       allChunks: true,
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: `./src/assets`,
+          to: `./assets`,
+          globOptions: {
+            ignore: ['.DS_Store']
+          }
+        }, {
+          from: `./src/**.html`,
+          to: `./`,
+          flatten: true,
+          globOptions: {
+            ignore: ['.DS_Store']
+          }
+        },
+      ]
     })
   ],
 };
