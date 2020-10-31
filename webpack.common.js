@@ -6,18 +6,14 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 let dir = 'dist';
 
-const copy = new CopyWebpackPlugin(
-  [
-    {
-      from: `./src/assets`,
-      to: `./assets`,
-    },
-    {
-      from: `./src/**.html`,
-      to: `./`,
-      flatten: true,
-    },
-  ],
+const copy = new CopyWebpackPlugin([{
+    from: `./src/assets`,
+    to: `./assets`,
+  }, {
+    from: `./src/**.html`,
+    to: `./`,
+    flatten: true,
+  }],
   {
     ignore: [`.DS_Store`],
   },
@@ -43,21 +39,16 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: `babel-loader`,
-          },
-        ],
-      },
-      {
+        use: [{
+          loader: `babel-loader`,
+        }],
+      }, {
         test: /\.vue$/,
         loader: 'vue-loader',
-      },
-      {
+      }, {
         test: /\.(png|jpg)$/,
         loader: 'url-loader'
-      },
-      {
+      }, {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract([
           {
@@ -68,8 +59,7 @@ module.exports = {
           },
           'sass-loader'
         ]),
-      },
-      {
+      }, {
         test: /\.html$/,
         loader: `html-loader`,
         options: {
@@ -79,8 +69,13 @@ module.exports = {
     ],
   },
 
-  plugins: [copy, new webpackDashboard(), new VueLoaderPlugin(), new ExtractTextPlugin({ // define where to save the file
-    filename: 'css/[name].bundle.css',
-    allChunks: true,
-  })],
+  plugins: [
+    copy,
+    new webpackDashboard(),
+    new VueLoaderPlugin(),
+    new ExtractTextPlugin({ // define where to save the file
+      filename: 'css/[name].bundle.css',
+      allChunks: true,
+    })
+  ],
 };
