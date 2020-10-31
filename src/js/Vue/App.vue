@@ -60,9 +60,8 @@ export default {
   methods: {
     handleClick(e) {
       const active = e.target.id;
-      const project = this.projects.find(p => p.id === active);
-      this.active = project;
-      mouseEffect.updateColors(Math.random() * 1.0, Math.random() * 1.0);
+      this.active = this.projects.find(p => p.id === active);
+      mouseEffect.updateColors(Math.random(), Math.random());
     }
   },
 
