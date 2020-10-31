@@ -45,8 +45,6 @@ export default {
   },
 
   created() {
-    // init everything
-
     // if there's an error during the WebGL context creation
     mouseEffect.curtains.onError(() => {
       document.body.classList.add("no-webgl");
@@ -54,7 +52,6 @@ export default {
 
     // add the plane to start the effect
     mouseEffect.addPlane();
-
   },
 
   methods: {
